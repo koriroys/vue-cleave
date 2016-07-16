@@ -9,7 +9,7 @@ npm run dev
 ```
 
 ## VueJS component usage
-Find the main file in `./src/App.vue` and `./components/cleave.vue`.
+Find the main file in `./src/App.vue` and `./src/components/cleave.vue`.
 ```
 <template>
   <Cleave :options='cleaveOptions'></Cleave>
