@@ -1,4 +1,4 @@
-# Cleave-Vue
+# Vue-Cleave
 > forked from https://github.com/nosir/cleave.js
 
 CleaveJS as a component of VueJS
@@ -46,7 +46,7 @@ By using `cleave.vue` as a component, there are three things for you to do:
 3. Simply use `<Cleave></Cleave>` as a normal `<input/>` field.
 
 ## Options
-The options in `vue-clive` is as same as the the Doc below:
+The options in `vue-clive` is same to the the Doc below:
 > [Cleave.js Documentation](https://github.com/nosir/cleave.js/blob/master/doc/options.md)
 
 ## License
