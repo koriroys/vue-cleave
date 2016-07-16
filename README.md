@@ -16,7 +16,7 @@ Find the main file in `./src/App.vue` and `./src/components/cleave.vue`.
 <!-- App.vue -->
 
 <template>
-  <Cleave :options='cleaveOptions'></Cleave>
+  <Cleave :options='cleaveOptions' v-model='formatedValue'></Cleave>
 </template>
 
 <script>
@@ -25,10 +25,16 @@ import Cleave from './components/cleave.vue'
 export default {
   data() {
     return {
-      cleaveOptions: {  // custom options
-        date: true,
-        datePattern: ['Y', 'm', 'd']
+      formatedValue: '',
+      cleaveOptions: {
+        numeral: true,
+        numeralDecimalScale: 4
       }
+    }
+  },
+  watch: {
+    'formatedValue': (val) => {
+      console.log(val)
     }
   },
   components: {
@@ -37,7 +43,6 @@ export default {
 }
 
 </script>
-
 ```
 By using `cleave.vue` as a component, there are three things for you to do:
 
